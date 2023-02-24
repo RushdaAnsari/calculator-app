@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none;
+}
+.container{
+    margin-top: 10px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    margin-top: 90px;
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #fff,
+                      5px 5px 12px rgba(0, 0, 0, .16);
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+}
+
+.output{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    grid-column: span 4;
+    height: 160px;
+    width: 280px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #fff,
+                inset 5px 5px 12px rgba(0, 0, 0, .16);
+    border: none;
+    border-radius: 30px;
+    color: rgba(70, 70, 70);
+    text-align: end;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 2px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand{
+    color: rgb(77, 76, 76);
+    font-size: 1.5rem;
+}
+.output .current-operand{
+    color: rgb(46, 46, 46);
+    font-size: 2rem;
+}
+.calculator .percent{
+    background-color: #C1AEFC;
+    font-size: 20px;
+}
+.calculator .divide{
+    background-color: #eef56d;
+    font-size: 28px;
+}
+.calculator .multiply{
+    background-color: #FFAACF;
+    font-size: 28px;
+}
+.calculator .minus{
+    background-color: #FEC868;
+    font-size: 28px;
+}
+.calculator .plus{
+    background-color: #85CDFD;
+    font-size: 28px;
+}
+.calculator .equals{
+    background-color: #03C988;
+}
+.calculator .ac{
+    background-color: #f4d5ab;
+}
+.calculator .del{
+    background-color: #BFDCE5;
+}
+.calculator .empty{
+    height: 0;
+    width: 0;
+}
+button{
+    height: 55px;
+    width: 55px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #fff,
+                 5px 5px 12px rgba(0, 0, 0, .16);
+    border: none;  
+    border-radius: 50%; 
+    margin: 8px; 
+    font-size: 20px;    
+    color:rgb(46, 46, 46);      
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
