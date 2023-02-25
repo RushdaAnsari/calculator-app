@@ -59,30 +59,54 @@
     background-color: #C1AEFC;
     font-size: 20px;
 }
+.calculator .percent:hover{
+    background-color: #a98dfd;
+}
 .calculator .divide{
     background-color: #eef56d;
     font-size: 28px;
+}
+.calculator .divide:hover{
+    background-color: #eaf513;
 }
 .calculator .multiply{
     background-color: #FFAACF;
     font-size: 28px;
 }
+.calculator .multiply:hover{
+    background-color: #f96ca9;
+}
 .calculator .minus{
     background-color: #FEC868;
     font-size: 28px;
+}
+.calculator .minus:hover{
+    background-color: #fbac23;
 }
 .calculator .plus{
     background-color: #85CDFD;
     font-size: 28px;
 }
+.calculator .plus:hover{
+    background-color: #3cb0fe;
+}
 .calculator .equals{
     background-color: #03C988;
 }
+.calculator .equals:hover{
+    background-color: #0bf1a5;
+}
 .calculator .ac{
-    background-color: #f4d5ab;
+    background-color: #9ff7b7;
+}
+.calculator .ac:hover{
+    background-color: #7ff69f;
 }
 .calculator .del{
     background-color: #BFDCE5;
+}
+.calculator .del:hover{
+    background-color: #88d0e6;
 }
 .calculator .empty{
     height: 0;
@@ -99,6 +123,9 @@ button{
     margin: 8px; 
     font-size: 20px;    
     color:rgb(46, 46, 46);      
+}
+button:hover{
+    background-color: #dfe5ea;
 }
 footer {
     position: fixed;
