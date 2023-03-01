@@ -1,4 +1,4 @@
-# calculator-app
+# javascript-calculator
 Basic functional calculator with a beautiful interface built using JavaScript.  
 
 # Description
