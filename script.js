@@ -93,6 +93,7 @@ class Calculator {
     }
 }
 
+
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
 const equalsButton = document.querySelector('[data-equals]')
@@ -100,21 +101,16 @@ const deleteButton = document.querySelector('[data-delete]')
 const allClearButton = document.querySelector('[data-all-clear]')
 const previousOperandTextElement = document.querySelector('[data-previous-operand]')
 const currentOperandTextElement = document.querySelector('[data-current-operand]')
-
-
-// picking random colors from list
-const colors = ["red", "blue", "green", "purple", "orange", "pink", "skyblue", "darkgold"];
 const outputElement = document.getElementById("calc-output");
 
 
-// function for applying random font colors
-function setRandomFontColor() {
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  outputElement.style.color = randomColor;
-}
-
-
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
+
+
+// function for applying font color
+function fontColor() {
+  outputElement.style.color = 'black';
+}
 
 
 // number button
@@ -122,13 +118,13 @@ numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText)
         calculator.updateDisplay()
-        setRandomFontColor()
+        fontColor()
     })
     window.addEventListener('keydown', (event) => {
         if (event.key === button.innerText) {
             calculator.appendNumber(button.innerText)
             calculator.updateDisplay()
-            setRandomFontColor()
+           fontColor()
         }
     })
 })
@@ -154,13 +150,13 @@ operationButtons.forEach(button => {
 equalsButton.addEventListener('click', button => {
     calculator.compute()
     calculator.updateDisplay()
-    setRandomFontColor()
+    fontColor()
 })
 window.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         calculator.compute()
         calculator.updateDisplay()
-        setRandomFontColor()
+        fontColor()
        
     }
 })    
